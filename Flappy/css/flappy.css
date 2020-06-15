@@ -1,0 +1,99 @@
+@font-face{
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+div[wm-flappy]{
+    width: 50%;
+    height: 70%;
+    border: solid 5px royalblue;
+    background-image: url("../imgs/ceu.jpg");
+    background-color: skyblue;
+    background-position-x: -10px;
+    background-repeat: round;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+ 
+    
+}
+.tuboCima{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    /* border: solid 5px darkgreen */
+    flex-basis: 14%;
+    height: 50%;
+}
+
+.tuboBaixo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 5px darkgreen; */
+    flex-basis: 14%;
+    height: 50%;
+}
+
+.tuboCano{
+    box-sizing: border-box;
+    border: solid 5px darkgreen;
+    width: 80%; 
+    height: 80%;
+    background-image: linear-gradient(to left,green, darkgreen);
+    align-self: center;
+    flex-grow: 2;
+    
+}
+
+.tuboTop{
+    box-sizing: border-box;
+    height: 15%;
+    width: 100%;
+    flex-grow: 1;
+    background-image: linear-gradient(to left,green, darkgreen);
+    /* background-color: yellow; */
+}
+
+.passagem{
+    box-sizing: border-box;
+    height: 30%;
+    width: 100%;
+    /* border: solid 5px white; */
+    flex-grow: 0;
+}
+
+.passaro{
+    box-sizing: border-box;
+    background-image: url(../imgs/passaro.png);
+    height: 10%;
+    width: 10%;
+    margin: 0px;
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.coluna{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;    
+    /* border: solid 2px yellowgreen ; */
+    position: absolute; 
+    height: 100%;
+    width: 15%;
+    justify-content: space-between;
+    right: -15%;
+
+}
+
+.ponto {
+    font-size: 10%;
+    color: whitesmoke;
+    font-family: Pixel,Consolas,monospace;
+    position: absolute;
+    margin: 0;
+    margin-right: 2%;
+    font-size: 1.9rem;
+    
+}
